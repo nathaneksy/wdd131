@@ -1,0 +1,55 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    max-width: 650px;
+    margin: 0 auto; /* Centers the content */
+    padding: 20px; /* Adds space inside the content box */
+}
+
+.title h1 {
+    text-align: center; /* Center aligns the title */
+    letter-spacing: 1px; /* Adjusts spacing between letters */
+    text-transform: uppercase; /* Makes text uppercase */
+    margin: 0; /* Removes default margins */
+}
+
+.title h2 {
+    font-size: 20px;
+    color: #006EB6; /* Subtitle color */
+    text-align: center; /* Center aligns the subtitle */
+    border-bottom: 1px solid #888888; /* Adds a line under the title */
+    padding-bottom: 0px; /* Adds space between title and line */
+    margin-bottom: 50px;
+    letter-spacing: 3px;
+}
+
+main p {
+    text-align: left; /* Left aligns the paragraphs */
+    margin: 20px 0; /* Adds space above and below paragraphs */
+}
+
+.list {
+    margin-left: 20px; /* Indents the ordered list */
+    margin: 20px;
+}
+
+.list li {
+    margin-bottom: 20px; /* Adds spacing between list items */
+}
+
+footer {
+    text-align: center; /* Center aligns the footer content */
+    margin-top: 20px; /* Adds space above the footer */
+}
+
+.picture {
+    width: 150px; /* Sets logo size */
+    height: auto; /* Maintains aspect ratio */
+    margin: 50px;
+}
