@@ -53,3 +53,17 @@ footer {
     height: auto; 
     margin: 50px;
 }
+
+body.dark {
+    background-color: #333; 
+    color: white; 
+}
+
+body.dark .title h2 {
+    color: #00A6D6; 
+}
+
+body.dark .list li {
+    color: white; 
+
+}
