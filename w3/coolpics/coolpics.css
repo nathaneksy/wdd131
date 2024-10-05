@@ -1,0 +1,45 @@
+img {
+	max-width: 100%;
+    object-fit: cover;
+}
+ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+nav {
+    background-color: rgb(188, 116, 188);
+}
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+figure {
+    width: 100%;
+    height: 100%;}
+section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+@media screen and (max-width: 700px) {
+    ul{
+        display: none;
+        flex-direction: column;
+    }
+}
