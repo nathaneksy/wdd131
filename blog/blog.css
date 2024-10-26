@@ -63,6 +63,7 @@ main {
 .book-info {
     font-size: 0.9rem;
     color: #473144;
+    text-align: right; 
 }
 
 .book-info p {
@@ -77,7 +78,8 @@ main {
 
 .book-details img {
     max-width: 150px;
-    margin-right: 20px;
+    margin: 0 auto; 
+    display: block; 
 }
 
 .book-details p {
@@ -93,14 +95,12 @@ main {
     text-decoration: underline;
 }
 
-
 .filters {
     background-color: #f9f9f9;
     padding: 20px;
     font-size: 1rem;
     color: #473144;
     border-color: #EFC69B;
-    
 }
 
 .skiptocontent a {
