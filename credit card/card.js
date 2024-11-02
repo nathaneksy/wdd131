@@ -4,19 +4,16 @@ $(document).ready(function () {
 
     var cardNumber, cardMonth, cardYear, cardCVC, cardHolder;
 
-    // check for any empty inputs
     function findEmpty() {
         var emptyText = $('#form-container input').filter(function () {
 
             return $(this).val == null;
         });
 
-        // add invalid class to empty inputs
         console.log(emptyText.prevObject);
         emptyText.prevObject.addClass('invalid');
     }
 
-    // check for card type and display corresponding icon
     function checkCardType() {
         cardNumber = $('#card-number').val();
         var cardType = Stripe.card.cardType(cardNumber);
@@ -39,16 +36,15 @@ $(document).ready(function () {
         }
     }
 
-    // check card type on card number input blur 
+
     $('#card-number').blur(function (event) {
         event.preventDefault();
         checkCardType();
     });
 
-    // on button click: 
     $('#card-btn').click(function (event) {
 
-        // get each input value and use Stripe to determine whether they are valid
+
         var cardNumber = $('#card-number').val();
         var isValidNo = Stripe.card.validateCardNumber(cardNumber);
         var expMonth = $('#card-month').val();
@@ -59,7 +55,7 @@ $(document).ready(function () {
         var cardHolder = $('#card-holder').val();
         event.preventDefault();
 
-        // alert the user if any fields are missing
+
         if (!cardNumber || !cardCVC || !cardHolder || !expMonth || !expYear) {
             console.log(cardNumber + cardCVC + cardHolder + cardMonth + cardYear);
             $('#form-errors').addClass('hidden');
@@ -68,8 +64,6 @@ $(document).ready(function () {
             $('#card-error').text('Please complete all fields.');
             findEmpty();
         } else {
-
-            // alert the user if any fields are invalid
             if (!isValidNo || !isValidExpiry || !isValidCVC) {
                 $('#form-errors').css('display', 'block');
                 if (!isValidNo) {
