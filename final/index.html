@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me</title>
+  <meta name="description" content="About me, [Your Name], a web developer passionate about creating dynamic websites.">
+  <meta name="keywords" content="web developer, portfolio, [Your Name], dynamic websites">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <img src="images/logo.png" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    flex-grow: 1; 
+}
+
+.snowboard,
+.basketball {
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-img {
+    position: relative;
+    width: 100%;
+    height: 250px; 
+    object-fit: cover; 
+    border-radius: 5px;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(37, 33, 33, 0.8);
+    padding: 40px;
+    border-radius: 20px;
+    z-index: 1;
+    color: white;
+    text-decoration: double;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.text h2 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.text p {
+    font-size: 17px;
+    color: #ffffff;
+}
+  </style>
+
+  <main class="home-grid">
+    <section class="snowboard">
+        <img class="card-img" src="images/snowboard.jpg" alt="Snowboard">
+        <img class="card-img" src="images/paris.jpg" alt="dirtbike">
+        <img class="card-img" src="images/dirtbike.jpg" alt="paris">
+        <div class="text">
+            <h2>About Myself!</h2>
+            <p>My name is Nathan Escujuri. I was born In Oregon to a family of six, both my parents and three
+                siblings and have
+                lived in Idaho for most of my life. Because I have grown up in Idaho I've taken up hobbies like
+                snowboarding,
+                dirtbiking, cars, fishing, camping, boating and many other outdoors related activities. I also enjoy
+                playing basketball,
+                being with friends and family, traveling, learning about different cultures and their foods,
+                cooking, playing
+                video games, watching movies and so much more.</p>
+        </div>
+    </section>
+    <section class="basketball">
+        <img class="card-img" src="images/basketball.jpg" alt="basketball">
+        <img class="card-img" src="images/fishing.jpg" alt="fishing">
+        <img class="card-img" src="images/car.jpg" alt="car">
+        <div class="text">
+            <h2>About Myself!</h2>
+            <p>My last name originates from Basque decent from my fathers side and
+                because of that I love the culture and I believe that is where my love for travel and learning of
+                I love learning about other cultures and traveling. One of my biggest goals in life is to become the best version of myself that I can be.
+                Because of this i'm constantly on the pursuit of improvement and growth to learn each day. I am also
+                a member of the Church of Jesus Christ of Latter Day Saints and have been my whole life.</p>
+        </div>
+    </section>
+</main>
+
+ <section id="exp">
+      <h1 class="title">Experience</h1>
+      <div class="section-container">
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="images/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ Years <br />Graphic Design</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="images/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Studying at BYUI<br />WDD Degree</p>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <section id="contact">
+        <h1 class="title">Contact Me</h1>
+        <div class="contact-info-upper-container">
+          <div class="contact-info-container">
+            <img
+              src="images/email.png"
+              alt="Email icon"
+              class="icon contact-icon email-icon"
+            />
+            <p><a href="mailto:examplemail@gmail.com">esc21007@byui.edu</a></p>
+          </div>
+          <div class="contact-info-container">
+            <img
+              src="images/linkedin.png"
+              alt="LinkedIn icon"
+              class="icon contact-icon"
+            />
+            <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+          </div>
+        </div>
+      </section>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <img src="images/logo.png" alt="Logo" class="logo">
+      <div class="social-links">
+        <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="images/x.jpg" alt="Twitter"></a>
+        <a href="#"><img src="images/link.png" alt="LinkedIn"></a>
+      </div>
+      <p>&copy; 2024 Nathan Escujuri. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

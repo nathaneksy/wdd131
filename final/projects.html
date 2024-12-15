@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="header-container">
+      <img src="images/logo.png" alt="Logo" class="logo">
+      <nav>
+        <ul>
+          <li><a href="index.html">About Me</a></li>
+          <li><a href="projects.html">Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="projects">
+      <h1>My Projects</h1>
+
+      <input type="text" id="search" placeholder="Search projects...">
+      <div id="filter-buttons">
+        <button data-filter="all">All</button>
+        <button data-filter="web">Web Development</button>
+        <button data-filter="design">Design</button>
+        <button data-filter="business">Business</button>
+        <button data-filter="misc">Misc</button>
+      </div>
+
+      <div class="project-list">
+        <div class="project-card" data-category="web">
+          <h2>Portfolio Website</h2>
+          <p>A personal portfolio to showcase my work.</p>
+          <img src="images/website.png" alt="Logo" class="proimg">
+        </div>
+        <div class="project-card" data-category="design">
+          <h2>Graphic Design Mockups</h2>
+          <p>A collection of UI/UX design samples.</p>
+          <img src="images/GD.png" alt="Logo" class="proimggd">
+        </div>
+        <div class="project-card" data-category="web">
+          <h2>Blog Platform</h2>
+          <p>A custom blog platform built with HTML, CSS, and JavaScript.</p>
+          <img src="images/blog.png" alt="Logo" class="proimg">
+        </div>
+        <div class="project-card" data-category="business">
+            <h2>Lead Gen Business</h2>
+            <p>Car detailing lead generations business: Learn more</p>
+            <img src="images/google.png" alt="Logo" class="proimg">
+          </div>
+          <div class="project-card" data-category="misc">
+            <h2>Game project</h2>
+            <p>Small game projects coded in python</p>
+            <img src="images/game.png" alt="Logo" class="proimggdd">
+          </div>
+          <div class="project-card" data-category="">
+            <h2></h2>
+            <p></p>
+            <img src="images/.png" alt="placeholder" class="proimg">
+          </div>
+          <div class="project-card" data-category="">
+            <h2></h2>
+            <p></p>
+            <img src="images/.png" alt="placeholder" class="proimg">
+          </div>
+          <div class="project-card" data-category="">
+            <h2></h2>
+            <p></p>
+            <img src="images/.png" alt="placeholder" class="proimg">
+          </div>
+          <div class="project-card" data-category="">
+            <h2></h2>
+            <p></p>
+            <img src="images/.png" alt="placeholder" class="proimg">
+          </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-container">
+      <img src="images/logo.png" alt="Logo" class="logo">
+      <div class="social-links">
+        <a href="#"><img src="images/facebook.png" alt="Facebook"></a>
+        <a href="#"><img src="images/x.jpg" alt="Twitter"></a>
+        <a href="#"><img src="images/link.png" alt="LinkedIn"></a>
+      </div>
+      <p>&copy; 2024 [Your Name]. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>
