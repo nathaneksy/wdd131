@@ -18,29 +18,46 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-
-.logo {
-  max-width: 50px;
+  .project-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .project-card {
+    flex: 1 1 calc(30.333% - 20px); /* Adjusts to 3 cards per row */
+    box-sizing: border-box; /* Ensures padding and border do not affect width */
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    margin: 10px;
+    overflow: hidden; /* Ensures contents do not overflow the card */
+  }
+  
+  .project-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .project-card p {
+    font-size: 1em;
+    margin-bottom: 20px;
+  }
+  
+  .proimg, .proimggd, .proimggdd {
+    max-width: 100%;
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Rounds the corners of the images */
+    object-fit: cover; /* Ensures the image covers the entire frame without stretching */
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  
+.logo{
+  height: 5%;
+  width: 5%;
 }
-.proimg {
-  max-width:475px;
-  margin: 25px;
-}
-
-.proimggd{
- max-width: 575px;
- max-height:250px;
- margin-left: 80px;;
- margin-top: 25px;
-}
-.proimggdd{
-  max-width: 575px;
-  max-height:250px;
-  margin-left: 100px;;
-  margin-top: 25px;
- 
- }
-
 nav ul {
   list-style: none;
   display: flex;
